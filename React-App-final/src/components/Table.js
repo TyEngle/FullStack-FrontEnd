@@ -1,5 +1,6 @@
-import React from 'react';
-
+import React from "react";
+//instances of cities will be changed to games
+//concatenate data so each attribute is under specified fields
 const Table = ({ cities }) => {
   return (
     <table className="table">
@@ -11,19 +12,24 @@ const Table = ({ cities }) => {
         </tr>
       </thead>
       <tbody>
-        { (cities.length > 0) ? cities.map( (city, index) => {
-                   return (
-                    <tr key={ index }>
-                      <td>{ city.id }</td>
-                      <td>{ city.name }</td>
-                      <td>{ city.townHall}</td>
-                    </tr>
-                  )
-                 }) : <tr><td colSpan="5">Loading...</td></tr> }
+        {cities.length > 0 ? (
+          cities.map((city, index) => {
+            return (
+              <tr key={index}>
+                <td>{city.id}</td>
+                <td>{city.name}</td>
+                <td>{city.townHall}</td>
+              </tr>
+            );
+          })
+        ) : (
+          <tr>
+            <td colSpan="5">Our data will display here from our DataBase!</td>
+          </tr>
+        )}
       </tbody>
     </table>
   );
-}
+};
 
-export default Table
-
+export default Table;
