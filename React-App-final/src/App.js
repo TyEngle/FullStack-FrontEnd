@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "./logo.svg";
 import Appbar from "./components/Appbar";
 import Games from "./components/Games";
 
