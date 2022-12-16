@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-
+import { BrowserRouter as Router, Link } from "react-router-dom";
 export default function Appbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -25,6 +25,9 @@ export default function Appbar() {
             Games Database
           </Typography>
           <Button color="inherit">Login</Button>
+          <Link className="navbar-brand" to="/view-game">
+            View Game
+          </Link>
         </Toolbar>
       </AppBar>
     </Box>
