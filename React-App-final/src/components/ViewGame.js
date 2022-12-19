@@ -16,7 +16,9 @@ export default function ViewUser() {
   //I think our database URL will replace
   //the URL in the following function
   const loadGame = async () => {
-    const result = await axios.get(`http://localhost:8080/game/${id}`);
+    const result = await axios.get(
+      `https://mocki.io/v1/3363fcc3-ba18-4fdb-a5dc-9175f4ded02e/${id}`
+    );
   };
 
   return (
