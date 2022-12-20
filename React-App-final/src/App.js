@@ -1,18 +1,18 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Appbar from "./components/Appbar";
-import Games from "./components/Games";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ViewGame from "./components/ViewGame";
+import Home from './components/Home'
+import AddGame from "./components/AddGame";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import EditGame from './components/EditGame';
+import ViewUser from './components/ViewGame';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Appbar />
-
         <Routes>
-          <Route exact path="/view-game" element={<ViewGame />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/addgame' element={<AddGame />} />
+          <Route path="/editgame/:id" element={<EditGame />} />
+          <Route path="/viewgame/:id" element={<ViewUser />} />
         </Routes>
       </Router>
     </div>
