@@ -25,8 +25,8 @@ export default function AddGame() {
     };
 
     return(
-    <div className="container">
-        <div className="row">
+    <div>
+        <div>
             <div>
                 <h2>Add User</h2>
                 <form onSubmit={(e) => onSubmit(e)}>

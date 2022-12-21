@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import { Link, useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom";
+import "./home.css"
 
 export default function Home() {
 const [games, setGames] = useState([]);
@@ -24,7 +25,7 @@ const deleteGame=async (id)=>{
 
     return (
         <div>
-            <Link to='/addgame'>ADD STUFF</Link>
+            <h2><Link to='/addgame'>ADD GAME</Link></h2>
             <table class="table">
                 <thead>
                     <tr>

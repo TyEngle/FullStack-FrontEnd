@@ -36,8 +36,8 @@ export default function EditGame() {
     }
 
     return(
-    <div className="container">
-        <div className="row">
+    <div>
+        <div>
             <div>
                 <h2>Edit User</h2>
                 <form onSubmit={(e) => onSubmit(e)}>
