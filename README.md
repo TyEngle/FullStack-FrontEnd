@@ -1,13 +1,6 @@
-Last edited:
+Node Extensions Needed
 
-Created for: Keyin college Software Development course semester 4 final sprint
-
-Created by:
-
-Created on:
-
-Front end side of our full-stack CRUD project
-
-Created in React
-
-
+React Router Dom
+Axios
+------
+Another note: The baseURL may potentially be different from the default port of localhost:8080. Feel free to change it to match your databases port!
