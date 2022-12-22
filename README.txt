@@ -6,7 +6,7 @@ Written for Keyin College Software Development semester 4 final sprint
 
 Frontend portion of the final project implementing CRUD with an interface created in REACT using js and jsx
 
-
+AWS S3 BUCKET URL: http://finalsprintbucket.s3-website-us-east-1.amazonaws.com/
 
 Node Extensions Needed:
 
