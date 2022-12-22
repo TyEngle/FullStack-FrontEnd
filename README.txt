@@ -8,7 +8,7 @@ Frontend portion of the final project implementing CRUD with an interface create
 
 
 
-Node Extensions Needed
+Node Extensions Needed:
 
 React Router Dom
 Axios
